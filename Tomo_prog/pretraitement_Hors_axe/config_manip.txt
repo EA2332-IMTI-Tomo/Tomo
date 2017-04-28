@@ -1,0 +1,20 @@
+# Ouverture numérique objectif/Numerical aperture of the objective
+NA 1.40
+#indice d'immersion/index immersion oil
+N0 1.515
+#longueur d'onde/wavelength (m)
+LAMBDA 0.000000632
+#focale lentille de tube objectif/focal length of the tube lens (m)
+F_TUBE 0.15
+#focale objectif/focal length of the objective (m)
+F_OBJ 0.0018
+#taille des pixels caméra/size of the camera pixel (m)
+TPCAM 0.0000055
+#Rapport focale des lentilles d'échantillonnage
+RF 0.7
+#Deroulement de phase/phase unwrapping on/off 
+DEROUL 0
+#Correction abberation/aberration correction on/off
+C_ABER 0
+#Born=1, Rytov=0
+BORN 1

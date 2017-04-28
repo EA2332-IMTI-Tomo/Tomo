@@ -1,0 +1,363 @@
+/store/home/bailleul/ProjetTOMO/refraction>tomoRefrac 
+theta : 1.178654
+K : 3.025985
+testnxmax_Rf 127.027840 
+round(testnxmax_Rf) 127.000000 
+Rayon 91.549873 
+Nxmax=85,4*Nxmax=340 
+N_tab (indice espace 3D)= 131096512 
+Espace final : 508 pixels cube
+dimx espace 3D, dv0: 340
+masque 512x512
+*******************************************
+remplissage de l'espace réciproque
+*******************************************
+  \,`//
+ _).. `_
+( __  -\ 
+    '`.
+   ( \>
+   _||_ 
+(xm0,ym0)=(0,0) dans le plan 33
+cpt_angle=100
+cpt_angle=200
+cpt_angle=300
+cpt_angle=400
+cpt_angle=500
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+cpt_angle=600
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+cpt_angle=700
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+Le fichier n'existe pas
+points_faux : 3269889,points_faux
+ecriture de centre en 32 bits
+Dimension centre : 170 x170jumeaux re-elimines : 298
+temps_total proj : 1.789999 
+coucou 
+ecriture de sup_redon.bin terminée,  
+nb_proj: 511
+Nombre de centre exclus : 0
+temps moyen pour 1 angle: 0.012250
+temps total pour 511 angle(s): 6.260000
+temps apres normalisation : 4.150000
+coucou_1
+coucou_2
+papillon_masque(cpt) termine
+*******************************************
+circshift avant TF3D 
+*******************************************
+temps apres circshift 3D: 21.290001
+*******************************************
+TF3D...
+*******************************************
+2s calcul de la TF3D
+     ."".    ."".
+     |  |   /  /
+     |  |  /  /
+     |  | /  /
+     |  |/  ;-.__ 
+     |  ` _/  /  /
+     |  /` ) /  /
+     | /  /_/\_/ 
+     |/  /      |
+     (  ' \ '-  |
+      \    `.  /
+       |      |
+       |      |
+temps apres TF 3D: 40.529999
+*******************************************
+circshift et calcul du module
+*******************************************
+temps apres circshift 3D final et calcul du module: 28.049999
+coucou-1*******************************************
+ecriture des résultats
+*******************************************
+coucou0
+coucou1
+coucou2coucou3ecriture de final_reel_shift.bin,  final_imag_shift.bin, final_modul_shift : OK 
+temps total: 149.309998

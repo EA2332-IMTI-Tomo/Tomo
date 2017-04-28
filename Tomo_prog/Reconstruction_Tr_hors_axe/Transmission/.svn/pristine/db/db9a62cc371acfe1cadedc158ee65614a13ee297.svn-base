@@ -1,0 +1,28 @@
+sur core i7 860 1533mhz DDR3
+version full CPU
+
+::: stop Boucle de lecture fichiers in 8.57025(s)
+::: start whole FFT
+::: start import fftw from CPLX volume
+::: start >circshift 1 vol
+::: stop >circshift 1 vol in 0.0867223(s)
+::: start >import 1 vol
+::: stop >import 1 vol in 0.127547(s)
+::: stop import fftw from CPLX volume in 0.470605(s)
+::: start circshift sup_redon (1 vol. int)
+::: stop circshift sup_redon (1 vol. int) in 0.0447763(s)
+::: start normalisation par sup_redon: (vol cplx / int)
+::: stop normalisation par sup_redon: (vol cplx / int) in 0.159104(s)
+::: start inner fft
+::: start fourier perform float
+wisdom loaded: /usr/local/phd/fftw_wisdom/fftwf_512cube_back_3T
+::: start fftwf core
+::: stop fftwf core in 0.869044(s)
+::: stop fourier perform float in 0.876515(s)
+::: stop inner fft in 0.876536(s)
+::: start export fftw volume
+::: stop export fftw volume in 0.576951(s)
+::: stop whole FFT in 2.12822(s)
+::: start sauvegarde sur disque des données
+::: stop sauvegarde sur disque des données in 0.365574(s)
+::: stop Lancement programme in 11.0705(s)

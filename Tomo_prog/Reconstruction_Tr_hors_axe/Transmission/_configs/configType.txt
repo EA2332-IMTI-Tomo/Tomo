@@ -1,0 +1,131 @@
+# -*- mode: shell-script -*-
+
+
+#--------------------------------------------------
+#SECTION CHEMINS
+
+# ~/ pas reconnu. chemins relatifs ok
+MASKPATH  /home/bailleul/ProjetTOMO/MASQUES
+OUTPUT_DIR  RESULTATS
+OUTPUT_RADIX  DiatomeeJolie
+INPUT_DIR  SESSIONS/session10032302_diatomee_csp_1.19V_512angles
+INFILE_RADIX  session10032302-record
+
+
+#--------------------------------------------------
+#SECTION POSTPROCESS
+
+# autofocus: fonctionnel mais inopérant encore
+AUTOFOCUS 0
+
+# correction mod_ref: testé OK je crois
+REF_CORRECTION 0
+#REF_FILE mod_ref.png
+
+
+#--------------------------------------------------
+#SECTION HDP/HA
+
+# Réglage décalage de phase (opt: + hors-axe)
+PHASE_SHIFT 1
+OFF_AXIS 0
+# si hors axe seul ou avec dp: préciser position du centre du cercle tel que vu sur show_fourier
+#CIRCLE_CX 746
+#CIRCLE_CY 243
+
+#override cercle (à tester)
+#CIRCLE_RADIUS
+
+
+#--------------------------------------------------
+#SECTION images acquises
+
+
+# 0 par défaut, 1 si les images sont numérotées en %3d pour le compteur d'angles
+PROPER_NUMBERS 0
+
+
+FIRST_LANE 1
+# combien d'hologrammes (jusqu'à 511)
+FINAL_ANGLE 511
+INC_ANGLE 1
+
+
+# dimensions des images d'acquisition
+IMAGE_DIMX 740
+IMAGE_DIMY 572
+
+# la découpe ne doit pas sortir de IMAGE_DIMX/Y
+
+# taille de la fenêtre de découpe
+CCD_DIMX 512
+CCD_DIMY 512
+
+# position du coin pour la découpe 
+EDGE_X 50
+EDGE_Y 50
+
+
+
+
+#--------------------------------------------------
+#SECTION grandeurs physiques 
+
+# valeur controlant l'exclusion de certains centres 
+XM0_LIMIT 200
+YM0_LIMIT 200
+
+# Indice du millieu (entre objectif et lamelle) 
+#(1: air / 1.33: eau / 1.515 huile)
+OIL_INDEX 1.515
+
+# NA objectif
+APERTURE 1.40
+# grossissement telan+objectif 
+FACTOR 100
+
+
+# longueur d'onde: 632e-9 si laser rouge. 475 si bleu (merci hui)
+LAMBDA 0.000000632
+
+
+# Taille des pixels sur le capteur CMOS caméra
+# 11.2e-6 ancienne cam, 8e-6 sur Photonfocus 
+PIXEL_SIZE 0.0000112
+
+# Rapport focale 
+# 0.83333 avant, 1 pour experience fom 2013, 0.5 pour ictms 2013
+RF_VAL 0.83333
+
+
+
+#--------------------------------------------------
+#SECTION cagibi à trucs divers
+
+# 0 ou 1 si usage monoprocesseur souhaité. 
+#   Même lorsque CUDA est activé, fftw peut être sollicité pour le
+#   calcul de la TF3D si la mémoire graphique de la carte est
+#   insuffisante  
+FFTW_THREADS 3
+
+# en version CPU du logiciel , utiliser CUDA pour calculer les FFT encore plus vite
+# CUDA est ignoré pour toutes les autres opérations, et la latence PCIe ralentit 
+FFT3D_CUDA 0
+# en version GPU du logiciel, je crois bien que c'est ignoré.
+
+
+# debug flags
+READ_VOLUME 0
+READ_DUMPED_VOLUME 0
+
+# visualisation pendant écriture (par défaut)
+END_VISU 1
+
+
+#taille d'un pixel sur l'image reconstruite:
+#8 micromètre / 20 = 0.4 micromètre = 400 nm
+# au 100x:
+#8 microns / 100 = 80nm | avec le RF à 0.5 => 40nm. Oui, c'est petit, mais c'est pas la résolution. 
+
+
+# les films sont commandés par la ligne de commande uniquement

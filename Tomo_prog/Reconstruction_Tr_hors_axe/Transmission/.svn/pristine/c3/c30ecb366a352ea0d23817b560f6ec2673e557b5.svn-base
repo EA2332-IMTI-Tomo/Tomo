@@ -1,0 +1,60 @@
+# -*- mode: shell-script -*-
+
+
+# ~/ pas reconnu. chemins relatifs ok
+MASKPATH /home/bailleul/ProjetTOMO/MASQUES
+
+
+
+AUTOFOCUS 0
+
+# résolution de la CCD 
+# (comprendre: la fenêtre de découpe DANS la limite de (Image_DIMX, Image_DIMY) 
+CCD_DIMX 1024
+CCD_DIMY 1024
+
+# valeur controlant l'exclusion de certains centres 
+XM0_LIMIT 200
+YM0_LIMIT 200
+
+# valeur du coin pour la découpe 
+#144;29 si fenêtre 1024;1024 centrée comme de par défaut sur show_fourier
+EDGE_X 144
+EDGE_Y 29
+
+
+#IMAGE_DIMX 1280
+#IMAGE_DIMY 1082
+
+
+#indice du millieu (entre objectif et lamelle) (1: air / 1.33: eau / 1.515 huile)
+OIL_INDEX 1.515
+
+# grossissement telan+objectif 
+FACTOR 100
+#NA objectif
+APERTURE 1.4
+
+
+# longueur d'onde: 632e-9 si laser rouge. 475 si bleu (merci hui)
+LAMBDA 0.000000475
+
+# Taille des pixels: (sur la CCD camera)
+#11.2e-6 ancienne cam, 8e-6 now 
+PIXEL_SIZE 0.0000080
+
+
+# Rapport focale 0.83333 avant, 1 pour experience fom 2013, 0.5 pour ictms 13
+RF_VAL 0.5
+
+
+#taille d'un pixel sur l'image reconstruite:
+#8 micromètre / 20 = 0.4 micromètre = 400 nm
+# au 100x:
+#8 microns / 100 = 80nm | avec le RF à 0.5 => 40nm. Oui, c'est petit, mais c'est pas la résolution. 
+
+# 0 ou 1 si usage monoprocesseur souhaité. 
+#   Lorsque CUDA est activé, fftw peut être sollicité pour le
+#   calcul de la TF3D si la mémoire graphique de la carte est
+#   insuffisante  
+FFTW_THREADS 3

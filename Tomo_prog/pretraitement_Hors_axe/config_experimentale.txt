@@ -1,0 +1,15 @@
+# Ouverture numérique
+NA 1.40
+#indice d'immersion
+N0 1.515
+#longueur d'onde
+LAMBDA 0.00000632
+#focale lentille de tube objectif
+F_TUBE 0.125
+#focale objectif
+FOBJ 0.0018
+#taille des pixels caméra
+TPCAM 0.000008
+#Rapport focale des lentille d'échantillonnage
+RF 0.5
+

@@ -1,0 +1,53 @@
+# -*- mode: shell-script -*-
+MASKPATH /home/bailleul/ProjetTOMO/MASQUES
+
+#--------------------------------------------------
+
+# position du coin pour la découpe centrée d'une image 1024^2 sur une 1312x1082
+#EDGE_X 144 
+#EDGE_Y 29
+# vals correspondent au placement d'une fenêtre de découpage centré de 1024x1024
+# tel que pratiqué par show_fourier
+
+# la fenêtre de découpe est placée au milieu de l'image
+EDGE_CENTER 1
+
+
+# taille de la fenêtre de découpe
+CCD_DIMX 1024
+CCD_DIMY 1024
+
+
+FIRST_LANE 1
+# combien d'hologrammes (jusqu'à 511)
+INC_ANGLE 1
+
+
+
+# valeur controlant l'exclusion de certains centres 
+XM0_LIMIT 200
+YM0_LIMIT 200
+
+OIL_INDEX 1.515
+APERTURE 1.40
+
+# longueur d'onde: 632e-9  632.8
+LAMBDA 0.000000633
+# grossissement telan+objectif  69.4444
+FACTOR 70
+
+# Taille des pixels: 8e-6 
+#PIXEL_SIZE 0.0000112
+PIXEL_SIZE 0.0000080
+
+# Rapport focale
+#RF_VAL 0.75896
+RF_VAL 0.6
+
+
+
+# 0 ou 1 si usage monoprocesseur souhaité. 
+#   Même lorsque CUDA est activé, fftw peut être sollicité pour le
+#   calcul de la TF3D si la mémoire graphique de la carte est
+#   insuffisante  
+FFTW_THREADS 3

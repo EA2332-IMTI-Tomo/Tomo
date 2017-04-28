@@ -1,0 +1,44 @@
+# Ouverture numérique objectif/Numerical aperture of the objective
+NA 1.40
+#indice d'immersion/index immersion oil
+N0 1.515
+#longueur d'onde/wavelength (m)
+LAMBDA 0.000000632
+#focale lentille de tube objectif/focal length of the tube lens (m)
+F_TUBE 0.15
+#focale objectif/focal length of the objective (m)
+F_OBJ 0.0018
+#taille des pixels caméra/size of the camera pixel (m)
+TPCAM 0.0000055
+#Rapport focale des lentilles d'échantillonnage
+RF 0.7
+#fréquence maximum accessible dans Fourier
+NXMAX 110
+#Paramètres de hors-axe : position du centre et rayon
+
+CIRCLE_CX 750
+CIRCLE_CY 220
+
+
+NB_HOLO 400
+
+#paramètre de balayage
+# Tension 
+VXMIN -1.50
+VXMAX 1.00
+VYMIN 2.00
+VYMAX 3.00
+#Offset
+DELTA_VX -0.1
+DELTA_VY 0.1
+
+
+
+
+
+
+
+
+
+
+

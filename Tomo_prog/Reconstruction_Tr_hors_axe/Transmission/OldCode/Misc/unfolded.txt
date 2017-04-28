@@ -1,0 +1,59 @@
+  while (argc > 0)
+    {
+      if (!strcmp(argv[0], "-cfg")) 
+	assert(false);
+      else if (!strcmp(argv[0], "-input")) 
+	assert(false);
+      else if (!strcmp(argv[0], "-output")) 
+	assert(false);
+      else if (!strcmp(argv[0], "-masks")) 
+	assert(false);
+      else if (!strcmp(argv[0], "-in_radix")) 
+	assert(false);
+      else if (!strcmp(argv[0], "-cuda_3d")) 
+	g_fft3d_cuda = (bool)atoi(argv[1]);
+      else if (!strcmp(argv[0], "-fftw_threads")) 
+	g_fftw_threads = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-image_dimx")) 
+	image_dimx = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-image_dimy")) 
+	image_dimy = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-ccd_dimx")) 
+	g_dimx_ccd = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-ccd_dimy"))
+	g_dimy_ccd = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-edge_x")) 
+	coin_x = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-edge_y")) 
+	coin_y = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-xm0_limit")) 
+	xm0_limite = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-ym0_limit"))
+	ym0_limite = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-first_lane"))  
+	premier_plan = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-final_angle"))  
+	Num_Angle_final = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-inc_angle"))  
+	SautAngle = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-oil_index"))  
+	n1 = atof(argv[1]);
+      else if (!strcmp(argv[0], "-aperture"))  
+	NA = atof(argv[1]);
+      else if (!strcmp(argv[0], "-lambda"))  
+	lambda = atof(argv[1]);
+      else if (!strcmp(argv[0], "-factor"))  
+	G = atoi(argv[1]);
+      else if (!strcmp(argv[0], "-pixel_size"))  
+	Tp = atof(argv[1]);
+      else if (!strcmp(argv[0], "-rf_val"))  
+	Rf = atof(argv[1]);
+      else
+	{
+	  cerr << endl; 
+	  usage(argc, argv);
+	  exit (EXIT_FAILURE);
+	}
+
+      argv += 2; argc -= 2;
+    }

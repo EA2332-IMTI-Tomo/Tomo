@@ -1,0 +1,149 @@
+## -*- makefile -*- 
+
+# attention: -DNONE est utilisé par openCV et ca déconne
+
+#GPU_SUPPORT = CUDA
+GPU_SUPPORT = SOFT
+SSE_SUPPORT = -DSSE4 -msse4  #commenter pour passer en soft pur
+RELEASE_MODE = DEBUG_MODE
+#RELEASE_MODE = FINAL
+
+#NVCC = nvcc
+CC = g++
+
+
+
+# good optimization flags
+MED_OPT = -finline-functions -fcaller-saves  -fthread-jumps -fstrength-reduce
+# expensive optimizations
+HARD_OPT = -funroll-loops -fexpensive-optimizations -frerun-cse-after-loop
+# hysterical /#fastmath: loss of IEEE complying #-felide-constructors: can alter side effects of constructors
+HYST_OPT = -ffast-math -felide-constructors
+# omitfp: debugging impossible
+FINAL_OPT = -fomit-frame-pointer 
+
+
+DEBUG = -g
+#OPTIMIZE = -g 
+OPTIMIZE =  -O3 #-pg
+#-O3 $(MED_OPT) $(HARD_OPT) $(HYST_OPT) $(FINAL_OPT)
+
+
+# si monocore
+#FFTW = -lfftw3
+# si multicore
+FFTW_LIBS = -lfftw3_threads -lfftw3 -lfftw3f -lfftw3f_threads -lm -lpthread 
+BOOST_LIBS = -lboost_system -lboost_chrono -lboost_thread -lboost_filesystem
+OPENCV_LIBS = -lopencv_core -lopencv_highgui -lopencv_imgproc
+
+COMMONFLAGS = -D$(GPU_SUPPORT) -D$(RELEASE_MODE) $(SSE_SUPPORT)  $(OPTIMIZE) $(INCL) $(DEBUG)
+#$(DEBUG)
+SOFTFLAGS = -ansi -Wall -fopenmp  #-fPIC
+#-msse
+# pour empêcher conversion silencieuse de double vers float
+
+CFLAGS = $(COMMONFLAGS) $(SOFTFLAGS)
+
+
+
+TOMO_LINK = $(FFTW_LIBS) $(BOOST_LIBS) $(OPENCV_LIBS) -lstdc++  -lAIRVOL -lvectra -lPGM  -fopenmp
+
+
+
+#SOURCES = main.cc cpu_launcher.cc recon_parser.cc util.cc util_Image.cc Holo_Process.cc Compute.cc Focus_Corrector.cc #fonctions_hui.cc Refocus.cc
+#cuFourier.cu util_Magick.cc fourier2D.cc memory.cc
+OWN_OBJS = obj/cpu_launcher.o obj/recon_parser.o obj/util.o obj/util_Image.o obj/Holo_Process.o obj/Compute.o obj/Focus_Corrector.o 
+
+
+#cuFourier.o util_Magick.o
+#$(SOURCES:.cc=.o:.cu=.o)
+
+
+
+#SOURCES=main.cpp hello.cpp factorial.cpp
+#OBJECTS=$(SOURCES:.cpp=.o)
+
+
+OBJS = $(OWN_OBJS) 
+
+EXE = tomoTrans_soft
+#EXE = tomoTrans_CUDA
+
+
+#*******************************************************************************
+# main section
+#*******************************************************************************
+
+
+
+
+all: $(OWN_OBJS) $(EXE)
+
+$(EXE): $(OBJS) obj/main.o *.h
+	$(CC) $(OBJS) obj/main.o -o  $@ $(TOMO_LINK) 
+
+
+#$^: toutes les dépendances
+#$<: la première seulement
+
+
+obj/%.o: %.cc
+	$(CC) -c $(CFLAGS)  -o $@ $< 
+
+# cas particuliers: résoudre les includes
+obj/Compute.o: Compute.cc  compute1.cc compute2.cc compute3.cc compute4.cc compute6.cc
+	$(CC) -c $(CFLAGS)  -o $@ Compute.cc
+
+obj/Holo_Process.o: Holo_Process.cc  Holo_Process_tools.cc 
+	$(CC) -c $(CFLAGS)  -o $@ Holo_Process.cc
+
+
+obj/FFTW_Image.o: ../Fourier/include/FFTW_Image.cc
+	$(CC) -c $(CFLAGS)  -o $@ $< 
+
+
+#*******************************************************************************
+
+launch: $(OBJS) obj/cpu_launch.o
+	$(CC) $(OBJS) cpu_launch.o -o launch $(TOMO_LINK) 
+
+
+#*******************************************************************************
+# phony utils
+#*******************************************************************************
+
+
+# Code printout/display
+print:	
+	a2ps -2  \
+		main.h main.cc \
+		-o Code.ps
+	gzip Code.ps
+
+
+display: Code.ps.gz
+	gv Code.ps.gz &	
+
+
+pdf: 	print
+	gunzip Code.ps.gz
+	ps2pdf Code.ps Code.pdf
+# -dCompatibilityLevel=1.3 -dSubsetFonts=true -dEmbedAllFonts=true -sPAPERSIZE=letter
+	gzip Code.ps
+
+
+clean:
+	rm -f *~ $(OBJS) obj/*.o $(EXE) Code.ps*
+
+cleanobj:
+	rm -f *~ $(OBJS) 
+
+remake:
+	make clean; make
+
+
+tags:
+	@etags  *.cc *.cu *.h	
+
+
+.PHONY:all print display pdf clean remake tags

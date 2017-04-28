@@ -1,0 +1,1 @@
+g++ cacluls_bertrand.o  memory.o $AIRVOL_OBJ  -o CalculsBert  -lfftw3_threads -lfftw3 -lm 

@@ -1,0 +1,6 @@
+penser à spécifier le nombre de cores à fftw
+passer lecture via RAM
+mesurer optis compilation
+
+
+  //fftw_plan_with_nthreads(2);

@@ -1,0 +1,61 @@
+# -*- mode: shell-script -*-
+MASKPATH /home/bailleul/ProjetTOMO/MASQUES
+OUTPUT_DIR  RESULTATS
+OUTPUT_RADIX DiatomeeJolie
+INPUT_DIR  SESSIONS/session10032302_diatomee_csp_1.19V_512angles
+INFILE_RADIX session10032302-record
+
+
+
+# dimensions des images d'acquisition
+IMAGE_DIMX 740
+IMAGE_DIMY 572
+
+# position du coin pour la découpe 
+EDGE_X 50
+EDGE_Y 50
+
+# taille de la fenêtre de découpe
+CCD_DIMX 512
+CCD_DIMY 512
+
+
+FIRST_LANE 1
+# combien d'hologrammes (jusqu'à 511)
+FINAL_ANGLE 511
+INC_ANGLE 1
+
+
+
+# valeur controlant l'exclusion de certains centres 
+XM0_LIMIT 200
+YM0_LIMIT 200
+
+OIL_INDEX 1.515
+APERTURE 1.40
+
+# longueur d'onde: 632e-9 (laser rouge old)
+LAMBDA 0.000000632
+# grossissement telan+objectif 
+FACTOR 100
+
+# Taille des pixels: 11.2e-6 (sur la CCD camera)
+PIXEL_SIZE 0.0000112
+# Rapport focale
+RF_VAL 0.83333
+
+#taille d'un pixel sur l'image reconstruite:
+#11.2 micromètre / 100 = 0.112 micromètre = 112 nm
+
+
+# 0 ou 1 si usage monoprocesseur souhaité. 
+#   Même lorsque CUDA est activé, fftw peut être sollicité pour le
+#   calcul de la TF3D si la mémoire graphique de la carte est
+#   insuffisante  
+FFTW_THREADS 3
+FFT3D_CUDA 0
+
+
+# debug flags
+READ_VOLUME 0
+READ_DUMPED_VOLUME 0

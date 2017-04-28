@@ -1,0 +1,1 @@
+g++ test_Image.o -o test_Image -lboost_system -lboost_chrono -lboost_thread -lfftw3_threads -lfftw3 -lfftw3f -lfftw3f_threads -lm -lpthread

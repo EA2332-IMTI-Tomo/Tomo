@@ -1,0 +1,11 @@
+* zoom dans fourier sur la pointe de la fibre
+
+* gestion BMP PGM automatique
+
+* correction par la référenc
+
+* check taille des fichiers holo (si un vide ou incomplet, on rejette)
+dans l'état actuel, on ne vérifie que l'existence
+
+* check si toutes les FFT2D sont optimisées.
+Dans l'état actuel, c'est pas clair du tout, notamment avec le code Hui. 

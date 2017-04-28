@@ -1,0 +1,16 @@
+*.txt
+*.h
+*.c
+*.cc
+PCA/*.c
+PCA/*.cc
+PCA/*.h
+Tests/*.cc
+Tests/*.h
+Tests/*.txt
+Tests/Makefile
+CommonLisp/*.lisp
+CommonLisp/*.txt
+CommonLisp/*.system
+CommonLisp/Perso/*.lisp
+.wipiz

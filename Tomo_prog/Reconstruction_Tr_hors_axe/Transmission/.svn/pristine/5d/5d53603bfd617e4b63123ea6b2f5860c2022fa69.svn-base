@@ -1,0 +1,12 @@
+# création répertoire vide
+mkdir /ramdisk/SESSIONS/realtime/
+
+# flush avant recommencement
+rm /ramdisk/SESSIONS/realtime/*.pgm
+
+
+client:
+> tomoTrans_CUDA _configs/configType.txt  -realtime_mode toto -input_dir /ramdisk/SESSIONS/realtime/
+
+serveur
+> simu_acquis.bash  /ramdisk/SESSIONS/session10032302_diatomee_csp_1.19V_512angles/ /ramdisk/SESSIONS/realtime/

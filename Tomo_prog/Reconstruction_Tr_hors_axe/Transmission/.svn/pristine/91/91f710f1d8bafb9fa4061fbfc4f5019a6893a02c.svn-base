@@ -1,0 +1,2 @@
+g++ -c testBoucle.cc -fopenmp
+g++ testBoucle.o -o testBoucle -fopenmp

@@ -1,0 +1,20 @@
+# -*- mode: shell-script -*-
+# taille de la fenêtre de découpe
+CCD_DIMX 1024
+CCD_DIMY 1024
+#thread FFTW
+FFTW_THREADS 3
+#Deroulement de phase/phase unwrapping on/off 
+DEROUL 0
+#Correction abberation/aberration correction on/off
+C_ABER 0
+#Born=1, Rytov=0
+BORN 0
+# -----------------------------
+FINAL_ANGLE 400
+INC_ANGLE 1
+# -----------------------------
+
+
+
+

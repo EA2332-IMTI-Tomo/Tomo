@@ -1,0 +1,8 @@
+*.cc
+*.cu
+*.h
+*.txt
+*.bash
+Misc
+Makefile*
+.wipiz

@@ -1,0 +1,1 @@
+tomoTrans_soft  config_a0.txt  --leak-check=full --track-origins=yes

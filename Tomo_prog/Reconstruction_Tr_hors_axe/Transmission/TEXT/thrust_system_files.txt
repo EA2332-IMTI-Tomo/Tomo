@@ -1,0 +1,2 @@
+thrust (dans include/cuda) ne DOIT PAS etre dans CPLS_INCLUDE_PATH
+il vaut mieux déplacer thrust, ne pas le mettre dans l'include path, et le mettre en -I

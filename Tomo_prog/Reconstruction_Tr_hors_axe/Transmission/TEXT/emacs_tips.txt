@@ -1,0 +1,2 @@
+M-c complétion sémantique
+M-x semantic-force-refresh: quand on est envahi de traits rouges qui signalent une erreur de syntaxe parfois héritée d'includes

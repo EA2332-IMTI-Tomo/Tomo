@@ -1,0 +1,3 @@
+Planbtage si l'objet contient moins que la valeur 45 (par ex suite à un lissage avec interpolation).
+->cv:solve se plante : l'init des matrices et le nombre de points ne doit pas coller
+

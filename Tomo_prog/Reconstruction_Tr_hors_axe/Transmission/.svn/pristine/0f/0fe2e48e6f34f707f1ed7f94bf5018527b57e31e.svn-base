@@ -1,0 +1,3 @@
+*.cc
+Makefile
+*.txt

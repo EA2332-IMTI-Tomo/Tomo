@@ -1,0 +1,11 @@
+* jpeg2000 => lossless compression
+* ::sleep => sleep_for.
+Etendre à tout le projet
+
+* test sur AIR_Volume d'acquisiiton plutôt que fichier
+* bug avéré Tomosiris: lecture .tomocfg bute sur le nombre d'angles et le type de manip (HA) alors que .tomocfg correct
+
+* manipTomo: override remet les valeurs d'avant à la fin
+* tomoTran: "bug" où le prog, lancé en mode rendu RT, se met en boucle d'attente infinie vers la fin.
+  reconstruction marche bien mais les volumes ne sont pas sauvés puisque fin pas détectée. implémenter détection de sommeil prolongé pour décider de la fin, ou bien trouver un moyen de lui demander de le faire =>
+* justement, si l'user fermait le viewer, ce serait un bon signal. Sauf que pb récurrent, penser à synchro entre threads ou autre.t

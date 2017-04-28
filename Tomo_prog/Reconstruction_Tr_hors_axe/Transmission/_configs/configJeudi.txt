@@ -1,0 +1,50 @@
+
+# ce groupe n'est pas encore traité à ce jour
+MASKPATH ../MASQUES
+OUTPUT_DIR ../RESULTATS
+INPUT_DIR ../SESSIONS/session10061701 
+INFILE_RADIX session10061701-record
+
+# résolution de la CCD 
+CCD_DIMX 512
+CCD_DIMY 512
+
+# valeur controlant l'exclusion de certains centres 
+XM0_LIMIT 200
+YM0_LIMIT 200
+
+# valeur du coin pour la découpe 
+EDGE_X 50
+EDGE_Y 50
+
+#
+IMAGE_DIMX 740
+IMAGE_DIMY 572
+
+FIRST_LANE 1
+FINAL_ANGLE 1000
+INC_ANGLE 1
+
+OIL_INDEX 1.515
+APERTURE 1.40
+
+# longueur d'onde: 632e-9 
+LAMBDA 0.000000632
+# grossissement telan+objectif 
+FACTOR 100
+
+# Taille des pixels: 11.2e-6 
+PIXEL_SIZE 0.0000112
+# Rapport focale
+RF_VAL 0.83333
+
+# 0 ou 1 si usage monoprocesseur souhaité. 
+#   Même lorsque CUDA est activé, fftw peut être sollicité pour le
+#   calcul de la TF3D si la mémoire graphique de la carte est
+#   insuffisante  
+FFTW_THREADS 4
+FFT3D_CUDA 1
+
+
+READ_VOLUME 0
+READ_DUMPED_VOLUME 0

@@ -1,0 +1,13 @@
+modifier fichier de config pour virer tout debug: 
+ALL_DEBUG 0
+END_VISU 0
+
+si pas déjà installé
+apt-get install python graphviz
+
+
+> valgrind --tool=callgrind tomoTrans_soft /ramdisk/pollJeuKressRecentre/recon.txt
+
+> cat callgrind.out.23578 | gprof2dot.py -f callgrind | dot -Tpng -o toto.png
+
+
